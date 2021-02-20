@@ -1,4 +1,11 @@
-on: [push, workflow_dispatch]
+name: 'mirror'
+on:
+  push:
+    branches:
+        - __mirror
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
 
 jobs:
   mirror:
