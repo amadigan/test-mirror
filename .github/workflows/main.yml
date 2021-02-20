@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: mirror
         id: mirror
-        uses: amadigan/github-mirror
+        uses: amadigan/github-mirror@main
         with:
           origin: 'git://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git'
