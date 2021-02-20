@@ -1,0 +1,12 @@
+on: workflow_dispatch
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    name: mirror
+    steps:
+      - name: mirror
+        id: mirror
+        uses: amadigan/github-mirror
+        with:
+          origin: 'git://git.kernel.org/pub/scm/fs/ext2/e2fsprogs.git'
